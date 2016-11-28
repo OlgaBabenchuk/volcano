@@ -1,0 +1,379 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*------ background colors ------*/
+/*--------- font colors ---------*/
+/*--------- radio size ---------*/
+/* breakpoints */
+/* font-family: "NautilusPompiliusRegular"; */
+@font-face {
+  font-family: "NautilusPompiliusRegular";
+  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
+  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  body * {
+    box-sizing: border-box; }
+  body h1 {
+    font-family: 'NautilusPompiliusRegular', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 93px; }
+    @media only screen and (max-width: 480px) {
+      body h1 {
+        font-size: 65px; } }
+  body h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fff; }
+  @media only screen and (max-width: 1200px) {
+    body {
+      width: 100vw;
+      height: auto; } }
+
+.layout-wrapper {
+  width: 100%;
+  min-height: 963px;
+  position: relative;
+  background-color: #169399; }
+  .layout-wrapper .layout-bg-img {
+    width: 100vw;
+    height: 100%;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    @media only screen and (max-width: 1200px) {
+      .layout-wrapper .layout-bg-img {
+        width: 100%;
+        height: 1035px;
+        top: 2%;
+        background-position-x: 20%; } }
+    @media only screen and (max-width: 768px) {
+      .layout-wrapper .layout-bg-img {
+        height: 800px; } }
+    @media only screen and (max-width: 480px) {
+      .layout-wrapper .layout-bg-img {
+        height: 690px; } }
+    @media only screen and (max-width: 320px) {
+      .layout-wrapper .layout-bg-img {
+        height: 300px; } }
+  @media only screen and (max-width: 1200px) {
+    .layout-wrapper {
+      width: 100%;
+      height: 1700px;
+      background-color: #004346; } }
+  @media only screen and (max-width: 768px) {
+    .layout-wrapper {
+      height: 1500px; } }
+  @media only screen and (max-width: 480px) {
+    .layout-wrapper {
+      height: 1300px; } }
+  @media only screen and (max-width: 320px) {
+    .layout-wrapper {
+      height: 500px; } }
+
+.top-line {
+  max-width: 1050px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 1200px) {
+    .top-line {
+      margin-left: 50px; } }
+  @media only screen and (max-width: 768px) {
+    .top-line {
+      margin-left: 30px; } }
+  @media only screen and (max-width: 480px) {
+    .top-line {
+      margin-left: 10px; } }
+
+.logo-wrapper {
+  width: 9.31em;
+  height: 61px; }
+
+.top-menu {
+  width: 930px;
+  text-align: right; }
+  @media only screen and (max-width: 1200px) {
+    .top-menu {
+      max-width: 70%;
+      background-color: #000;
+      opacity: 0.4;
+      margin-left: 3%;
+      padding: 5px; } }
+  @media only screen and (max-width: 768px) {
+    .top-menu {
+      padding: 4px; } }
+  .top-menu li {
+    display: inline-block; }
+    .top-menu li .active {
+      background-color: #c6fdff;
+      opacity: 0.4;
+      color: #000; }
+      @media only screen and (max-width: 1200px) {
+        .top-menu li .active {
+          background: none;
+          color: #fff; } }
+    .top-menu li a {
+      padding: 8px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #7de5ea;
+      line-height: 26px;
+      font-weight: 300;
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: 0.5s; }
+      .top-menu li a:hover {
+        background-color: #c6fdff;
+        opacity: 0.4;
+        color: #000; }
+      @media only screen and (max-width: 1200px) {
+        .top-menu li a {
+          font-size: 15px;
+          line-height: 26px;
+          font-weight: 300;
+          background: none;
+          margin: 0 8%;
+          padding: 0; } }
+      @media only screen and (max-width: 768px) {
+        .top-menu li a {
+          font-size: 14px;
+          line-height: 19px;
+          margin: 0 7%; } }
+      @media only screen and (max-width: 480px) {
+        .top-menu li a {
+          font-size: 9px;
+          line-height: 16px;
+          margin: 0 4%;
+          text-align: left; } }
+    .top-menu li:last-child a {
+      margin-right: 0; }
+      @media only screen and (max-width: 992px) {
+        .top-menu li:last-child a {
+          display: none; } }
+
+.registration-wrapper {
+  max-width: 500px;
+  text-align: center;
+  float: right;
+  margin-top: 2%;
+  margin-right: 10%; }
+  @media only screen and (max-width: 1200px) {
+    .registration-wrapper {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 90%;
+      left: 30%; } }
+  @media only screen and (max-width: 768px) {
+    .registration-wrapper {
+      width: 90%;
+      height: auto;
+      position: absolute;
+      top: 90%;
+      left: 15%; } }
+  @media only screen and (max-width: 480px) {
+    .registration-wrapper {
+      width: 90%;
+      position: absolute;
+      top: 90%;
+      left: 6%; } }
+  .registration-wrapper h1 {
+    color: #fff;
+    text-shadow: 0 5px 5px #0b494c;
+    margin-bottom: 37px; }
+    @media only screen and (max-width: 768px) {
+      .registration-wrapper h1 {
+        margin-bottom: 20px; } }
+  .registration-wrapper .forms {
+    padding: 45px 67px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #7de5ea;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; }
+    .registration-wrapper .forms p {
+      color: #77faff;
+      margin-bottom: 8px; }
+    .registration-wrapper .forms span {
+      color: #77faff;
+      font-size: 12px;
+      line-height: 18px; }
+      .registration-wrapper .forms span a {
+        color: #fff;
+        text-decoration: underline; }
+    .registration-wrapper .forms h2 {
+      margin-bottom: 30px; }
+    .registration-wrapper .forms label {
+      display: block;
+      margin: 10px 0; }
+    .registration-wrapper .forms .forms__user-inf input {
+      padding: 17px 58px;
+      color: #7c818c;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 26px;
+      background-color: #e1e5ed;
+      border-radius: 3px;
+      border: none; }
+    .registration-wrapper .forms .forms__currency {
+      position: relative; }
+      .registration-wrapper .forms .forms__currency span {
+        color: #fff; }
+        .registration-wrapper .forms .forms__currency span:first-child {
+          color: #77faff; }
+    @media only screen and (max-width: 480px) {
+      .registration-wrapper .forms {
+        padding: 15px 5px; } }
+  @media only screen and (max-width: 1200px) {
+    .registration-wrapper {
+      display: block;
+      float: none;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 768px) {
+    .registration-wrapper {
+      padding: 30px 35px;
+      line-height: 24px; } }
+  @media only screen and (max-width: 480px) {
+    .registration-wrapper {
+      padding: 15px 0;
+      line-height: 24px; } }
+
+.button-wrapper {
+  width: 316px;
+  height: 67px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 1.7px 1.3px black;
+  margin: 15px auto; }
+  .button-wrapper .button__layer-1 {
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    bottom: 0px;
+    background-image: url(../img/bg-btn2.png);
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 7.7px 1.3px black; }
+  .button-wrapper .button__layer-2 {
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    bottom: 0px;
+    background-image: url(../img/bg-btn4.png);
+    background-repeat: no-repeat; }
+  .button-wrapper .button__layer-3 {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    background-image: url(../img/bg-btn.png);
+    background-repeat: no-repeat; }
+  .button-wrapper .button__layer-4 {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    background-image: url(../img/btn3.png);
+    background-repeat: no-repeat;
+    transform: translate(14%); }
+  .button-wrapper .button__layer-5 {
+    width: 100%;
+    height: 27px;
+    position: absolute;
+    top: 8px;
+    background-image: url(../img/btn2.png);
+    background-repeat: no-repeat; }
+  .button-wrapper .button__layer-6 {
+    width: 100%;
+    height: 27px;
+    position: absolute;
+    top: 28px;
+    background-image: url(../img/btn.png);
+    background-repeat: no-repeat;
+    z-index: 10; }
+  .button-wrapper .button__layer-7 {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    background-image: url(../img/bg-btn3.png);
+    background-repeat: no-repeat; }
+  .button-wrapper button {
+    width: 316px;
+    height: 67px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.9px 0 #180100;
+    background: transparent;
+    border: none; }
+
+.social-wrapper {
+  width: 316px;
+  margin: 0 auto; }
+  .social-wrapper .social__items {
+    display: inline-block;
+    margin: 0 3px; }
+    .social-wrapper .social__items img {
+      width: 38px;
+      height: 38px; }
+
+/*# sourceMappingURL=style.css.map */
